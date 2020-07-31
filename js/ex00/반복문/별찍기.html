@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>반복문</title>
+    <title>별찍기</title>
 </head>
 <body>
-    Hello world !
-    <br />
-    <script type="text/javascript">
+    <script>
         var i = 0;
+        var j;
+
         while (i < 10)
         {
-            if (i == 5)
-                break
-            document.write("brain fuck "+ (i*2) +"<br />");
+            j = 0;
+            while (j < i)
+            {
+                document.write("o");
+                j++;
+            }
+            document.write("*<br />")
             i++;
         }
     </script>
